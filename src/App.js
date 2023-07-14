@@ -1,6 +1,7 @@
 import {useState} from "react";
 import close from './assets/eye-close-1.png'
 import open from './assets/eye-open.png'
+import Counter from "./components/Counter";
 const messages = [
     "Learn React ⚛️",
     "Apply for jobs 💼",
@@ -59,6 +60,8 @@ function App() {
             </div>
         </div>
             }
+
+            <Counter/>
         </>
     );
 }
