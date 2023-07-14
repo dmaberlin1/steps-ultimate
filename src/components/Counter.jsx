@@ -38,7 +38,7 @@ const Counter = () => {
             <span className={`${styles.span} ${styles.span__day}`}>
                 {count ===0 && 'today is'}
                 {count >1 && `${count} days from today is`}
-                {count<0 && `${count} days ago was`}
+                {count<0 && `${Math.abs(count)} days ago was`}
             </span>
             <span className={styles.span}> {date.toDateString()}</span>
             {/*<span className={styles.span}> {date.getDate()}</span>*/}
